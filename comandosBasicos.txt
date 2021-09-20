@@ -1,0 +1,40 @@
+cat: mirar el contenido de un archivo.
+rm <archivo>: borrar el archivo.
+rm -d <nombreDirectorioVacio>: borrar directorio vacio.
+rm -rf <nombreDirectorio>: borrar un directorio con contenido.
+mv <archivo> <nuevoDir>: sirve para mover un archivo de un directorio a otro.
+mv <nombreArchivo> <nuevoNombreArchivo>: renombrar archivo.
+man <comando>: manual (help) de los comandos, se usa como 'man cat'.
+apt-get update: mirar si hay actualizaciones de los paquetes que se tienen.
+apt-get upgrade: aplicar las actualizaciones de los paquetes.
+apt install <nombrePaquete>: instalar paquetes nuevos.
+sudo: ejecutar lso comandos en formato administrador, utilizar siempre que salga acceso denegado.
+
+si no deja guardar cambios a un archivo:
+1. pararse en la carpeta donde esta el archivo
+2. sudo chmod -R 777 <project_dir_name>
+2.1. sudo chown -R <user-name> <directory-name>
+sudo chown -R jpmontenegro ~/personalProjects
+
+generar llave ssh para conectar la terminar de Ubuntu con github:
+ssh-keygen -t rsa -b 4096 -C "e-mail"
+-t: es el tipo de algoritmo
+-b: tamaño en bytes de la clave
+-C: es para poner el correo primario de github
+
+eval "$(ssh-agent -s)": evaluar el agente que tiene la llave
+
+ssh-copy-id "email": sirve para copiar la llave pública y asignarla como una llave autorizada en otro servidor remoto. Lo cual nos permite acceso al servidor sin tener que usar la contraseña.
+
+comandos GIT para iniciar el repositorio:
+echo "# test" >> README.md
+git init
+git add README.md
+configurar el correo y el username:
+git config --global user.email 'juan.montenegro@quantil.com.co'
+git config --global user.name jpmontenegro
+para revisar -> git config --edit --global
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jpmontenegro/test.git
+git push -u origin main
