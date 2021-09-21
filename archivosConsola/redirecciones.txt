@@ -1,0 +1,31 @@
+# Redirigir el Standar Output y el Standar Error.
+<Comando> <Argumento> (1)> <nombreRedireccion.<formato>>: redirecciona el output de un comando y se lo asigna a un archivo.
+Se muestra en () el comando opcional, por lo que poner el 1 o no hacerlo no cambia nada.
+ls ../archivosConsola/ > prueba.txt
+
+<Comando> <ArgumentoErroneo> (2)> <nombreRedireccion.<formato>>: redireccionar el error del output de un comando a un archivo.
+
+<Comando> <Argumento> >> <nombreRedireccion.<formato>>: igual pero concatena las redirecciones.
+
+Comando más completo:
+<Comando> <Argumento> > <nombreRedireccion.<formato>> 2>&1: Para redirigir un output sin saber si será un error o no.
+<Comando> <Argumento> &> <nombreRedireccion.<formato>>: formato más corto para asignar.
+<Comando> <Argumento> &>> <nombreRedireccion.<formato>>: formato más corto para concatenar.
+
+
+# Redirigir el Standar Input
+<Comando> < <archivo/argumento>
+ls < prueba.tx 
+
+
+# Operador pipe.
+<Comando> <Argumento> | <Comando>
+Toma la primera parte como un Standar Input del segundo comando.
+
+<Comando> <Argumento> | <Comando> | <Comando>: permite encadenar muchos comandos.
+tee <archivo>: solo se puede utilizar con el operador pipe y redirecciona un Standar Input en un Standar Output, lo asigna a un archivo.
+ls -lh | less | tee pipe.txt: guarda el resultado de encadenar varios comandos en el archivo pipe.txt.
+ls -lh | sort | tee pipe.txt | less
+
+
+cowsay 'hola' | lolcat

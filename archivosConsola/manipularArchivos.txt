@@ -1,0 +1,25 @@
+head <archivo>: muestra las primeras 10 líneas de cualquier archivo de texto
+head <> -n <#líneas>: modifica las líneas que muestra por defecto.
+tail <archivo>: muestra las últimas líneas
+less <archivo>: se entra a una ventana interactiva para los archivos de texto. Se utiliza '/' para buscar una palabra. Se sale con 'q'.
+xdg-open <archivo>: abre el archivo de texto con el editor de texto predeterminado (VSC).
+# para terminar cualquier proceso que este corriendo la terminal -> CTRL + C
+naitilus <directorio>: abre una ventana de visualización (no me abre el hp).
+
+# comandos
+type <comando>: muestra la naturaleza de los comandos.
+alias <nombre>='<comando>': crear un alias personalizado para los comandos.
+help <comando> / <comando> --help
+man <comando>: manual usuario comando.
+info <comando>: descripción del comando (más resumido que man).
+whatis <comando>: dice lo que hace el comando.
+
+# Wildcards
+ls *<coincidencia>: buscar todos los archivos que tengan una coincidencia después del *.
+ls <coincidencia>*: se usa la coincidencia como prefijo.
+ls <coincidencia>?: cualquier archivo que tenga la coincidencia y unicamente un caracter adicional.
+ls <coincidencia>????: Cuatro caracteres.
+ls [[:upper:]]*: archivos que empiecen con mayúscula.
+ls -d [[:lower:]]*: Directorios y archivos que inicien con minúscula.
+ls [<caracter/es>]*: busca archivos con una especifica combinacion de caracteres al inicio.
+ls *[<caracter/es>]*

@@ -1,0 +1,29 @@
+# Comandos básicos
+ls -l: permite ver los archivos detalladamente, muestra cuando fue creado, su peso en bytes, etc.
+ls -h: lectura humana, similar a -l (peso diferente a bytes).
+ls -a: extensión 'all' que muestra todos los archivos y directorios incluyendo los ocultos.
+# Archivos ocultos son aquellos que tienen un '.' antes del nombre.
+ls -la: combinación del comando -l con -a.
+pwd: print working directory.
+CTRL + SHIFT + C: copiar algo en la terminal (click derecho).
+file <archivo>: una pequeña descripción de un archivo. 
+rev <archivo>: invierte el orden del los caracteres de un archivo de texto.
+cat <archivo1> <archivo2>: muestra la concatenación de archivos de texto. Si solo se pone un archivo lo printea.
+
+# Manipulación de archivos y directorios
+ls -lS: ordena los archivos por tamaño (size).
+ls -lSh: versión de lectura humana.
+ls <directorio>: ver los archivos de un directorio donde no estoy parado.
+tree: comando para mostrar los archivos como arbol.
+tree -L 2: especifica la profundidad de niveles (levels, en este caso 2) a los cuales muestra su representación en arbol.
+mkdir: make directory. Se pueden crear varios -> mkdir dir1 dir2 dir3
+touch: crear un archivo. Se pueden crear varios -> touch file1 file2 file3
+cp <archivo> <nombreCopiado>: copy files.
+mv <archivo> <directorio>: mover archivo.
+mv <archivo> <nuevoNombreArchivo>
+mv <Directorio> <nuevoNombreDirectorio>
+rm <archivo/directorio>: remover.
+rm -i <archivo/directorio>: rm interactive, y/n.
+rm -r <directorio>: extensión para borrar directorios.
+rm -ri: combinar la forma recursiva con la forma interactiva. Pregunta si quiere borrar cada uno de los archivos dentro del directorio.
+
