@@ -3,7 +3,7 @@ ls -l: permite ver los archivos detalladamente, muestra cuando fue creado, su pe
 ls -h: lectura humana, similar a -l (peso diferente a bytes).
 ls -a: extensión 'all' que muestra todos los archivos y directorios incluyendo los ocultos.
 # Archivos ocultos son aquellos que tienen un '.' antes del nombre.
-ls -la: combinación del comando -l con -a.
+ls -la / ls -al: combinación del comando -l con -a.
 pwd: print working directory.
 CTRL + SHIFT + C: copiar algo en la terminal (click derecho).
 file <archivo>: una pequeña descripción de un archivo. 
