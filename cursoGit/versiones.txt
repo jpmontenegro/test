@@ -1,0 +1,19 @@
+git log: muestra la historia de todos los commits.
+git log --stat: muestra los cambios especificos que se hicieron por archivo en cada commit.
+
+git reset <codigoCommit>: volver al estado anterior. Volver al pasado sin poder retornar al futuro, se sobreescribe la historia con el pasado.
+git reset <codigoCommit> --hard: elimina todos los cambios, incluso los que estaban en staging.
+git reset <codigoCommit> --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit.
+git reset HEAD: Este es el comando para sacar archivos del área de staging.
+
+git diff: permite visualizar los cambios que se tienen de un mismo archivo local y el archivo en staging.
+Esto es util para los archivos que ya se les hizo git add, pero se hicieron nuevas modificaciones posteriormente.
+
+git checkout: traer todos lo cambios o ciertos cambios de los archivos realizados en el repositorio no local (en GitHub) de un cierto commit.
+1. git checkout <codigoCommit> <archivo>
+2. git checkout <rama> <archivo>: traer el archivo vigente en la rama. (para devolverme a la versión más actualizada)
+
+git rm <archivo> --cached: Elimina los archivos de nuestro repositorio local y del área de staging, pero los mantiene en nuestro disco duro. 
+Básicamente le dice a Git que deje de trackear el historial de cambios de estos archivos, por lo que pasaran a un estado untracked.
+git rm --force: Elimina los archivos de Git y del disco duro. 
+Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).

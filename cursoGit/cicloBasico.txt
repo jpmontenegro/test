@@ -1,0 +1,13 @@
+git init: crear un repositorio, carpeta .git en el directorio donde se corra el comando.
+Por defecto se crea el repositorio en la rama Master.
+
+git add <archivo/s>: agregar los archivos a staging. Git trackea los cambios.
+git add .: añade todos los archivos y directorios que cambiaron.
+
+git commit -m "<Mensaje>": se commitean todos los archivos a los cuales se les hizo add. 
+Se pasan los archivos del staging al repositorio. Se le añade el indicador al commit.
+
+git commit -am: hace el add y el commit de los archivos que previamente ya les había hecho un git add al repo.
+
+git show: muestra el último commit realizado en detalle.
+
