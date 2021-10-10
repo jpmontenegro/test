@@ -8,4 +8,4 @@ git push origin master: enviar al repo remoto (origin) la rama master.
 
 alias arbol="git log --all --graph --decorate --oneline"
 
-git tag -a <version>(v0.1) -m "<mensaje>": ponerle un tag al proyecto, especificamente al commit en el que estoy parado.
+git tag -a <version>(v0.1) -m "<mensaje>" <codigoCommitTag>: ponerle un tag al proyecto, especificamente al commit en el que estoy parado.
