@@ -5,3 +5,5 @@ Primero toca sincronizar el repo local con el repo remoto
 git pull origin(remoto) master(local) --allow-unrelated-histories: permite funcionar el repo remoto con el repo local.
 
 git push origin master: enviar al repo remoto (origin) la rama master.
+
+alias arbol="git log --all --graph --decorate --oneline"
