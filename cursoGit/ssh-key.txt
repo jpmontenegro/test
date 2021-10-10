@@ -1,0 +1,10 @@
+git config --global user.email "<correoGitHub>"
+
+Crear la llave ssh: desde el home (directorio)
+ssh-keygen -t rsa (algoritmo) -b 4096 (complejidad llave) -C "<correoGitHub>"
+
+Verificar que el servidor de la llave este operando
+eval $(ssh-agent -s)
+
+Agregar la llave al servidor.
+ssh-add <directorioLlavePriv>/id_rsa (llave privada)
