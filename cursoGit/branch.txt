@@ -1,3 +1,4 @@
+RAMAS LOCALES
 git branch <nombreRama>: crear una rama en el repositorio local.
 git checkout <nombreRama>: cambiarse de rama en el repo local.
 No hacer un git checkout de una rama avanzada a una rama anterior si hay cambios que no estén en staging.
@@ -6,3 +7,9 @@ SE PERDERÁN LOS CAMBIOS.
 El merge se debe hacer desde la rama que se quiere conservar los cambios (por lo general master).
 merge <ramaUnir>: desde la rama en la que estoy trae los commits nuevos de la ramaUnir y los ajusta.
 Si hay un conflicto por 2 cambios a la misma línea de código del mismo archivo tanto en la Master como en Dev, el merge no se realizará. 
+
+
+RAMAS REMOTAS
+git show-branch --all
+gitk: abre un entorno visual tipo sourcetree
+git push origin <nombreRamaLocal>: comando para pushear una rama que no este en GitHub.
